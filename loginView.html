@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* body {
+  background-image: url('R.jpeg');
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  height: 100vh;
+  margin: 0;
+} */
+
+body {   
+            background-image: url('R.jpeg');
+            background-size: 100% ; 
+            font-family: Arial, sans-serif;
+            /* background-color:rgba(255, 127, 80, 0.477); */
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+}
+form {
+  /* border: 3px solid #989898; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; 
+}
+
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0 8px 48px;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: coral;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 12px 0;
+}
+
+/* img.avatar {
+  width: 15%;
+  border-radius: 50%;
+} */
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 50%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<form action="loginService.php" method="post">
+  <div class="imgcontainer">
+    <p style="font-weight: bold; font-size:large;">Login Page </p>
+  
+  </div>
+
+  <div class="container">
+    <label for="uname" style="margin-right: 140px;"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw" style="margin-right: 140px;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit" style="margin-left: 65px;">Login</button>
+
+    <p style="margin-left: 75px;">
+      Dont have an account? <a href="registrationView.html"> Create one</a>
+    </p>
+
+</form>
+
+</body>
+</html>
